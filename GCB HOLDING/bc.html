@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Estoque</title>
+    <link rel="stylesheet" href="bc.css">
+</head>
+<body>
+    <header>
+        <div class="logo"> 
+            <img src="/2.png" alt="">
+        </div>
+    </header>
+
+    <!-- Painel do Administrador -->
+    <div id="admin-panel">
+        <h2>Painel do Administrador</h2>
+        <a href="/cliente.html"><button onclick="logout()">Sair</button></a>
+        <button onclick="toggleInventory()">Ver Estoque</button>
+
+        <div id="inventory-section" class="hidden">
+            <h3>Gerenciar Estoque</h3>
+            <input type="text" id="product-name" placeholder="Nome do Produto">
+            <input type="number" id="product-quantity" placeholder="Quantidade">
+            <select id="product-category">
+                <option value="cosmetico">Cosmético</option>
+                <option value="eletronico">Eletrônico</option>
+                <option value="roupas">Roupas</option>
+                <option value="alimentos">Alimentos</option>
+            </select>
+            <input type="text" id="product-location" placeholder="Local do Produto">
+            <button onclick="addProduct()">Adicionar Produto</button>
+            <ul id="inventory-list"></ul>
+        </div>
+    </div>
+
+    <script src="bc.js"></script>
+</body>
+</html>

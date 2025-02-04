@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="cliente.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+    <a href="/sobre.html" class="btn-voltar">
+        ←
+    </a>
+    <div class="container">
+        <div class="content first-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Bem-vindo de volta!</h2>
+                <p class="description description-primary">Caso não possua cadastro <br> clique em cadastrar-se </p>
+                <a href="/login.html" class="btn btn-primary">Cadastrar</a>
+            </div>    
+            <div class="second-column">
+                <h2 class="title title-second">LOGIN</h2>
+                <div class="social-media">
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-facebook-f"></i>        
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-google-plus-g"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-linkedin-in"></i>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <!-- Formulário de login corrigido -->
+                <form class="form" id="login-form">
+                    <label class="text" for="nome">
+                        <i class="far fa-user icon-modify"></i>
+                        <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                    </label>
+                    
+                    <label class="email" for="email">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" id="email" name="email" placeholder="Gmail" required>
+                    </label>
+                    
+                    <label class="senha" for="senha">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" id="senha" name="senha" placeholder="Senha" required>
+                    </label>
+                    
+                    <button type="submit" class="btn btn-second">Entrar</button>       
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="cliente.js"></script>
+</body>
+</html>
